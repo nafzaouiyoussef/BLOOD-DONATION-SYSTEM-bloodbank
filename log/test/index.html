@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDONOR TEST</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="header"> 
+          <h2>iDONOR TEST</h2>
+        </div>
+        <form action="mailtest.php" method="POST" class="form" id="form">
+          <div class="form-control ">
+          <label for="firstname" >First Name</label>
+          <input id="firstname" name="firstname" type= "text" placeholder="Enter Your First Name" required> 
+            
+            
+  
+          
+          </div>
+
+          <div class="form-control ">
+            <label for="lastname" >Surname</label>
+            <input id="lastname" name="lastname" type= "text" placeholder="Enter Your Surname" required>
+              
+            
+            
+            </div>
+            <div class="form-control radio ">
+              <label for="gender" >Gender:</label>
+              <span>
+                <label for="male">
+              <input id="male" value="m" name="gender" type= "radio" required> Male
+               
+                </label>
+             
+              </span>
+
+              <span>
+                <label for="female">
+              <input id="female" value="f" name="gender" type= "radio" required> Female
+               
+                </label>
+                
+              </span>
+              
+              </div>
+
+          
+          <div class="form-control ">
+          <label for="email">Email</label>
+          <input id="email" name="email" type= "email" placeholder="name@domain.com" required>
+         </div>
+
+
+          <div class="form-control">
+            <label for="number">Phone Number</label>
+            <input
+              type="tel"
+             
+              placeholder="Enter Your Number"
+              id="number"
+              name="number" required>
+          </div>
+
+          <div class="form-control">
+            <label for="disease">Disease</label>
+            <input
+              type="text"
+             
+              placeholder="You have Any disease?"
+              id="disease"
+              name="disease" required>
+          </div>
+
+          <div class="form-control">
+            <label for="diabetes">Diabetes</label>
+            <input
+              type="text"
+             
+              placeholder="Do you have diabetes?"
+              id="diabetes"
+              name="diabetes" required>
+          </div>
+
+          <div class="form-control">
+            <label for="donate">Donate</label>
+            <input
+              type="text"
+             
+              placeholder="Have you ever donated blood?"
+              id="donate"
+              name="donate" required>
+          </div>
+
+          
+          <div class="form-control">
+            <label for="date">Date Of Your Last Donation</label>
+            <input
+              type="date"
+             
+              placeholder="When was the last time you donated blood?"
+              id="date"
+              name="date" required>
+          </div>
+          
+
+
+
+          <input id="button"  type="submit">
+          
+        </form>
+
+      </div>
+
+      <script src="/app.js"></script>
+    
+</body>
+</html>
