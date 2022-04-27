@@ -65,11 +65,11 @@
 						<thead>
 						<tr>
 							<th>Blood Group</th>
-							<th>Full Name</th>
-							<th>Gender</th>
-							<th>D.O.B</th>
-							<th>Weight</th>
-							<th>Address</th>
+							<th>Organisation Name</th>
+							<th>idnumber</th>
+							<th>Enter Date of donation</th>
+
+							<th>Centre Address</th>
 							<th>Contact</th>
 							<th>Blood Quantity</th>
 							<th>Collection Date</th>
@@ -81,9 +81,9 @@
 						  <tr class='gradeA'>
 						  <td>".$row['bloodgroup']."</td>
 						  <td>".$row['name']."</td>
-						  <td>".$row['gender']."</td>
+						  <td>".$row['idnumber']."</td>
 						  <td>".$row['dob']."</td>
-						  <td>".$row['weight']."</td>
+
 						  <td>".$row['address']."</td>
 						  <td>".$row['contact']."</td>
 						  <td>".$row['bloodqty']."</td>

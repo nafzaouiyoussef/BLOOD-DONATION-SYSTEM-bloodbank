@@ -65,7 +65,6 @@ if(isset($_POST['name'])){
 $name = $_POST["name"];    
 $gender = $_POST["gender"];
 $dob = $_POST["dob"];
-$weight = $_POST["weight"];
 $bloodgroup = $_POST["bloodgroup"];
 $address = $_POST["address"];
 $contact = $_POST["contact"];

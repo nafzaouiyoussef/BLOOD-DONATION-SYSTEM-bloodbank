@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2022 at 05:07 AM
+-- Generation Time: Apr 27, 2022 at 10:46 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -43,7 +43,8 @@ INSERT INTO `users` (`id`, `full_name`, `email`, `password`, `usertype`) VALUES
 (14, 'adminadmin', 'idonor.admin@idonor.io', '202cb962ac59075b964b07152d234b70', 'admin'),
 (15, 'nafzaoui', 'nafzaouiyoussef@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
 (16, 'assaad', 'assaad@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
-(17, 'houssam', 'houssam@gmail.com', '202cb962ac59075b964b07152d234b70', 'user');
+(17, 'houssam', 'houssam@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
+(19, 'test', 'test@gmail.com', '202cb962ac59075b964b07152d234b70', 'user');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +64,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

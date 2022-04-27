@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2022 at 05:08 AM
+-- Generation Time: Apr 27, 2022 at 10:46 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -41,8 +41,8 @@ CREATE TABLE `announce` (
 --
 
 INSERT INTO `announce` (`id`, `announcement`, `bloodneed`, `dat`, `organizer`, `requirements`) VALUES
-(1, 'DEMO ANNOUNCEMENT', 'B+', '2022-08-09', 'upmclub', 'Weight at least 50kg, No alcohol intake in 24hrs prior to donation, light meal should be taken before donation, be in good health, must be 18 years old and must have at least 3 month interval than the last donation.'),
-(2, 'URGENT CASE: Serious Accident Condition', 'B-', '2022-07-26', 'upm', 'Must be in good health and feeling very well. Must weigh at least 110 lbs.');
+(1, 'DEMO ANNOUNCEMENT', 'B+', '2022-03-08', 'upmclub', 'Weight at least 50kg, No alcohol intake in 24hrs prior to donation, light meal should be taken before donation, be in good health, must be 18 years old and must have at least 3 month interval than the last donation.'),
+(2, 'URGENT CASE: Serious Accident Condition', 'B-', '2022-02-08', 'upm', 'Must be in good health and feeling very well. Must weigh at least 110 lbs.');
 
 -- --------------------------------------------------------
 
@@ -52,12 +52,12 @@ INSERT INTO `announce` (`id`, `announcement`, `bloodneed`, `dat`, `organizer`, `
 
 CREATE TABLE `blood` (
   `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `gender` varchar(20) NOT NULL,
+  `name` varchar(500) NOT NULL,
+  `idnumber` varchar(20) NOT NULL,
   `dob` date NOT NULL,
   `weight` int(11) NOT NULL,
   `bloodgroup` varchar(3) NOT NULL,
-  `address` varchar(20) NOT NULL,
+  `address` varchar(500) NOT NULL,
   `contact` varchar(10) NOT NULL,
   `bloodqty` int(11) NOT NULL,
   `collection` date NOT NULL
@@ -67,9 +67,9 @@ CREATE TABLE `blood` (
 -- Dumping data for table `blood`
 --
 
-INSERT INTO `blood` (`id`, `name`, `gender`, `dob`, `weight`, `bloodgroup`, `address`, `contact`, `bloodqty`, `collection`) VALUES
-(17, 'simou', 'M', '1975-05-05', 80, 'O-', 'demooo', '7454447854', 360, '2021-01-02'),
-(19, 'nafzaouiyoussef', 'm', '2000-10-04', 60, 'A+', 'upm ', '060000000', 16, '2022-04-06');
+INSERT INTO `blood` (`id`, `name`, `idnumber`, `dob`, `weight`, `bloodgroup`, `address`, `contact`, `bloodqty`, `collection`) VALUES
+(17, 'Centre régional de transfusion sanguine MARRAKECH', '126358', '2022-04-25', 80, 'O-', 'Bd Al Moustachfayate, Marrakech 40000', '7454447854', 360, '2021-01-02'),
+(19, 'Le Centre Régional de Transfusion de Marrakech', '963254', '2022-04-10', 60, 'A+', 'Dispensaire Ibn Tofail,', '060000000', 850, '2022-04-06');
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ CREATE TABLE `campaigndb` (
 --
 
 INSERT INTO `campaigndb` (`id`, `cname`, `oname`, `phn`, `cdate`, `descp`) VALUES
-(8, 'Saving Lives Together', 'upm', 1597534560, '2022-04-08', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
+(8, 'Saving Lives Together', 'upm', 1597534560, '2022-07-07', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
 
 -- --------------------------------------------------------
 
@@ -120,8 +120,9 @@ CREATE TABLE `donor` (
 
 INSERT INTO `donor` (`id`, `name`, `guardiansname`, `gender`, `dob`, `weight`, `bloodgroup`, `email`, `address`, `contact`, `username`, `password`) VALUES
 (24, 'YOUSSEF', 'youssef', 'M', '2022-04-13', 50, 'A+', 'nafz@gmail.com', 'ddd', '0641862588', 'callmeyousf', 'lll'),
-(25, 'houssa elouafi', 'houssam', 'M', '2002-04-07', 80, 'B', 'HOUSSAM@gmail.com', 'ddd', '055555555', 'houssam', '123'),
-(26, 'asaad etayib', 'etayib', 'M', '1999-12-04', 55, 'o', 'asaad@gmail.com', 'ddd', '06666666', 'asaad', '123');
+(25, 'houssa elouafi', 'houssam', 'F', '2002-04-07', 80, 'B', 'HOUSSAM@gmail.com', 'ddd', '055555555', 'houssam', '123'),
+(26, 'Assaad Ettaib', 'Ettaib', 'M', '1999-12-04', 55, 'o', 'Assaad@gmail.com', 'ddd', '06666666', 'asaad', '123'),
+(27, 'simou rouqui', 'adil', 'm', '1999-04-10', 80, 'o-', 'simou@gmail.com', 'casablanca ', '056999999', 'simou', '123');
 
 --
 -- Indexes for dumped tables
@@ -177,7 +178,7 @@ ALTER TABLE `campaigndb`
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

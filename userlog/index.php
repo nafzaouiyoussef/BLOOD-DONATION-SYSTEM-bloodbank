@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+//the isset function to check username is already loged in and stored on the session
+
+
+
+
+
+if(!isset($_SESSION["user_id"])){
+    header("Location:landing.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,8 +144,8 @@
                                 <i class="icofont-blood-drop icofont-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">Donate</div>
-                                    <div>Blood</div>
+                                <div class="huge">Centers</div>
+                                    <div>Section</div>
                                 </div>
                             </div>
                         </div>

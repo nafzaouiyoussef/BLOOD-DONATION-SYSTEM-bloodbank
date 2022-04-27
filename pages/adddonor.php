@@ -63,7 +63,7 @@
                                      
                                         <div class="form-group">
                                             <label>Enter Full Name</label>
-                                            <input class="form-control" name="name" type="text" placeholder="Example:Harry Den" required>
+                                            <input class="form-control" name="name" type="text" placeholder="Example:Youssef Nafzaoui" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Enter Guardian's Name</label>
@@ -76,7 +76,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Enter D.O.B</label>
+                                            <label>Birthday</label>
                                             <input class="form-control" type="date" name="dob" required>
                                         </div>
 

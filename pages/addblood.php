@@ -60,24 +60,21 @@
                                     <form role="form" action="addedblood.php" method="post">
                                      
                                         <div class="form-group">
-                                            <label>Enter Full Name</label>
-                                            <input class="form-control" type="text" placeholder="Harry Den" name="name" required>
+                                            <label>Organisation name</label>
+                                            <input class="form-control" type="text" placeholder="centre name" name="name" required>
                                         </div>
                                         
                                         <div class="form-group">
-                                            <label>Gender [ M/F ]</label>
-                                            <input class="form-control" placeholder="M or F" name="gender" required>
+                                            <label>idnumber</label>
+                                            <input class="form-control" placeholder="Organisation id" name="gender" required>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Enter Date of birth</label>
+                                            <label>Enter Date of donation</label>
                                             <input class="form-control" type="date" name="dob" required>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label>Enter Weight</label>
-                                            <input class="form-control" placeholder="Weight" type="number" name="weight" required>
-                                        </div>
+                                       
 
                                         <div class="form-group">
                                             <label>Enter Blood Group</label>
@@ -85,7 +82,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Enter Address</label>
+                                            <label>Centre Address</label>
                                             <input class="form-control" placeholder="Address" type="text" name="address" required>
                                         </div>
 

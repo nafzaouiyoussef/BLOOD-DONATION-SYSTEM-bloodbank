@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="rstyle.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 
     <title>IDONOR</title>
 </head>
@@ -46,8 +47,12 @@
                         <a class="nav-link" href="#centers">Centers</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#staff">Staff</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+
                 </ul>
                 <a href="landing.php"><button  class="btn btn-danger ms-lg-3">Join Us</button></a>
                 
@@ -336,8 +341,89 @@ It might seem just a drop, but you can be a hero.</p>
             </div>
 
         </div>
-    </section><!-- CENTERS -->
+        <!-- CENTERS -->
+        <!-- STAFF -->
+    </section>
+	<section id="staff">
+    <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-danger">STAFF</h6>
+                    <h1>TEAM MEMBERS</h1>
+                    
+                </div>
+				</div>
+			</div>
+		</div>
+		<div class="testimonial-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="team-slider owl-carousel">
+							<div class="single-box text-center">
+								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://iili.io/VLHVj9.png"></div>
+								<div class="info-area">
+									<h4>Houssam Elouafi</h4>
+									<p>Web Devlopper.</p><a href="https://www.linkedin.com/in/houssam-elouafi-a03886231">LinkedIn</a> 
+								</div>
+							</div>
+							<div class="single-box text-center">
+								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://iili.io/VLHH7V.png"></div>
+								<div class="info-area">
+									<h4>Youssef Nafzaoui</h4>
+									<p>Web Devlopper.</p><a href="https://www.linkedin.com/in/youssef-nafazaoui-735996209">LinkedIn</a>
+								</div>
+							</div>
+							<div class="single-box text-center">
+								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://iili.io/VLHJkB.png"></div>
+								<div class="info-area">
+									<h4>Ettaib Assaad</h4>
+									<p>Web Devlopper</p><a href="#">LinkedIn</a>
+								</div>
+							</div>
+							
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+	</script> 
+	<script>
+	       $('.team-slider').owlCarousel({
+	           loop: true,            
+	           nav: false,
+	           autoplay: true,
+	           autoplayTimeout: 5000,
+	           smartSpeed: 450,
+	           margin: 20,
+	           responsive: {
+	               0: {
+	                   items: 1
+	               },
+	               768: {
+	                   items: 2
+	               },
+	               991: {
+	                   items: 3
+	               },
+	               1200: {
+	                   items: 3
+	               },
+	               1920: {
+	                   items: 3
+	               }
+	           }
+	       });
+	</script>
 
+ <!-- STAFF -->
     <!-- CONTACT -->
     <section id="contact">
         <div class="container">
