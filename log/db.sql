@@ -41,9 +41,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `full_name`, `email`, `password`, `usertype`) VALUES
 (14, 'adminadmin', 'idonor.admin@idonor.io', '202cb962ac59075b964b07152d234b70', 'admin'),
-(15, 'nafzaoui', 'nafzaouiyoussef@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
-(16, 'assaad', 'assaad@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
-(17, 'houssam', 'houssam@gmail.com', '202cb962ac59075b964b07152d234b70', 'user'),
 (19, 'test', 'test@gmail.com', '202cb962ac59075b964b07152d234b70', 'user');
 
 --
